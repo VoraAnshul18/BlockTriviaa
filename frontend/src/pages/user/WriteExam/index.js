@@ -119,7 +119,7 @@ useEffect(()=>{
     setView={setView}
     startTimer={startTimer}
     />}
-    {(view==="questions"&&questions!==[])&&<div className='flex flex-col gap-2 mt-2'>
+    {(view==="questions"&&questions.length > 0)&&<div className='flex flex-col gap-2 mt-2'>
      <div className='flex justify-between'>
      <h1 className='text-2xl'>
        {selectedQuestionIndex+1} : {questions[selectedQuestionIndex].name}
